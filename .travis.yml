@@ -16,4 +16,6 @@ after_script:
 app.js
 root@47.93.58.173:/root/www/ceshi
 
-
+# 执行install
+install:
+ - npm install
