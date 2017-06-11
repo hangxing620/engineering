@@ -1,4 +1,19 @@
 langunage: node_js
+node_js:
+- 7.10.0
+before_install:
+- openssl aes-256-cbc -K $encrypted_b20d7045110e_key -iv $encrypted_b20d7045110e_iv
+  -in id_rsa.enc -out id_rsa -d
+  - mv id_rsa ~/.ssh -f
+  - chmod 600 ~/.ssh/id_rsa
+  # 配置 ssh
+  - eval $(ssh-agent)
+  - ssh-add ~/.ssh/id_rsa
+  - cp .travis/ssh_config ~/.ssh/config
 
-node_js: 
-  - 7.10.0
+after_script:
+-scp -o StrictHostKeyChecking=no
+app.js
+root@47.93.58.173:/root/www/ceshi
+
+
