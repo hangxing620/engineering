@@ -17,7 +17,6 @@ before_install:
   
 
 # 改变文件权限
- - mv id_rsa ~/.ssh -f
  - chmod 600 ~/.ssh/id_rsa
 
 # 配置 ssh
