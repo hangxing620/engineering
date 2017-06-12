@@ -20,6 +20,6 @@ before_install:
 - cp .travis/ssh_config ~/.ssh/config
 
 after_script: 
- -scp -o StrictHostKeyChecking=no app.js root@47.93.58.173:/root/www/ceshi
+ -scp -o StrictHostKeyChecking=no app.js root@123.207.233.35:/root/www/ceshi
 
 
