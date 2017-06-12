@@ -1,5 +1,5 @@
 User root
 Host 47.93.58.173
 StrictHostKeyChecking no
-IdentityFile ~/.ssh/id_rsa
+IdentityFile ~/.ssh/travis
 IdentitiesOnly yes
